@@ -1,0 +1,199 @@
+/* ========= Global Reset ========= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* ========= Main Container ========= */
+.container {
+    width: 900px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 30px 35px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    color: #fff;
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Beautiful Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Section Headings */
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+/* ========= Inputs ========= */
+.form-area input,
+.search-area input {
+    width: 48%;
+    padding: 12px 14px;
+    margin: 5px 1%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.form-area input:focus,
+.search-area input:focus {
+    background: rgba(255,255,255,0.35);
+    box-shadow: 0 0 8px rgba(255,255,255,0.5);
+}
+
+/* ========= Buttons ========= */
+button {
+    padding: 10px 18px;
+    margin: 8px 4px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.25s ease;
+}
+
+/* Green Save Button */
+#saveBtn {
+    background: #2ecc71;
+    color: #fff;
+}
+#saveBtn:hover {
+    background: #27ae60;
+    transform: translateY(-2px);
+}
+
+/* Clear Button */
+#clearBtn {
+    background: #e74c3c;
+    color: white;
+}
+#clearBtn:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Search Buttons */
+#searchBtn {
+    background: #3498db;
+    color: #fff;
+}
+#searchBtn:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+#resetSearch {
+    background: #7f8c8d;
+    color: #fff;
+}
+#resetSearch:hover {
+    background: #636e72;
+    transform: translateY(-2px);
+}
+
+/* ========= Table Area ========= */
+.table-area {
+    margin-top: 25px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.10);
+}
+
+/* Table Header */
+thead {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    font-size: 14px;
+}
+
+tbody tr {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+tbody tr:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+/* Action Buttons */
+.edit-btn {
+    background: #f1c40f;
+    color: #000;
+}
+.edit-btn:hover {
+    background: #d4ac0d;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: #fff;
+}
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+/* ========= Pagination ========= */
+.pagination-area {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#prevPage, #nextPage {
+    background: #ffffff22;
+    color: #fff;
+    font-weight: 500;
+}
+#prevPage:hover, #nextPage:hover {
+    background: #ffffff40;
+    transform: translateY(-2px);
+}
+
+#pageInfo {
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ========= Animation ========= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
